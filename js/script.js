@@ -28,7 +28,10 @@ function lanzarDadosJugador1(){
     let dado1=Math.floor(Math.random()*6)+1;//math.floor redondea el resultado
     let dado2=Math.floor(Math.random()*6)+1;
     lanzamientoJugador1.push([dado1,dado2]);
-    
+    //deshabilitar el boton del jugador 1 para que solo pueda jugar el 2
+    document.querySelector("#lanzar-j1").disabled=true;
+    document.querySelector("#lanzar-j2").disabled=false;
+
     actualizarRondaHTML(rondaActual,dado1,dado2,"jugador1");
 }
 
@@ -40,7 +43,9 @@ function lanzarDadosJugador2(){
     let dado1=Math.floor(Math.random()*6)+1;//math.floor redondea el resultado
     let dado2=Math.floor(Math.random()*6)+1;
     lanzamientoJugador2.push([dado1,dado2]);
-    
+    //deshabilitar el boton del jugador 2 para qu esolo pueda jugar el 1
+    document.querySelector("#lanzar-j1").disabled=false;
+    document.querySelector("#lanzar-j2").disabled=true;
     actualizarRondaHTML(rondaActual,dado1,dado2,"jugador2");
     rondaActual++; //se incrementa la ronda
 }
