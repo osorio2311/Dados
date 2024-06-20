@@ -46,10 +46,10 @@ function lanzarDadosJugador2(){
 }
 
 
-
+//Esta parte es la que me cuesta entender
 function actualizarRondaHTML(ronda,dado1,dado2,jugador){
     let rondaDiv= document.querySelector(`#ronda-${ronda}`);
-    if(!rondaDiv){
+    if(!rondaDiv){  
         rondaDiv=document.createElement("div");
         rondaDiv.classList.add("ronda");
         //rondaDiv.className=("ronda"); es lo mismo que la linea anterior, pero solo agrega una clase
@@ -74,7 +74,7 @@ function actualizarRondaHTML(ronda,dado1,dado2,jugador){
     //operador ternario
     jugadorDiv.innerHTML+=`<p> Jugador ${jugador==='jugador1'? 1 : 2} : ${suma}</p>`;
 
-}
+}// hasta aqui me cuesta
 
 
 
