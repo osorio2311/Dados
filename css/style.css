@@ -1,0 +1,59 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#resultado{
+    margin-top:  25px;
+}
+
+#rondas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rondas{
+    margin: 10px 0;
+}
+
+.dados{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.dados img{
+    width: 50px;
+    height: 50px;
+}
+
+#controles{
+    margin-top: 20px;
+}
+
+button{
+    margin: 5px;
+}
+
+
+.css-button-fully-rounded--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #adb5bd;
+    background: #e66ca5;
+  }
+  .css-button-fully-rounded--sand:hover {
+    background: #fac6ea;
+    color: #af96aa
+  }
